@@ -1,0 +1,173 @@
+/* ログイン画面 */
+.login-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-primary {
+    background-color: deepskyblue;
+}
+
+.btn-secondary {
+    background-color: orange;    
+}
+
+.btn-success{
+background-color: deepskyblue;
+}
+
+.btn-warning {
+    background-color: orange;
+}
+
+
+/* 商品登録画面 */
+.register-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.register-container h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+
+.register-container input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-warning {
+    background-color: orange;
+}
+
+.btn-info {
+    background-color: deepskyblue;
+}
+
+
+.alert {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+
+
+.btn-back {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-back:hover {
+    background-color: darkgray;
+}
+
+.btn-search {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: deepskyblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 商品詳細画面　ボタン */
+.btn-detail, .btn-delete {
+    display: inline-block;
+    background-color: #ccc; 
+    color: black;
+    border: 1px solid gray;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.btn-detail:hover, .btn-delete:hover {
+    background-color: #bbb;
+}
+
+/* 商品編集画面　ボタン */
+.btn-submit, .btn-back {
+    display: inline-block;
+    background-color: #ccc; 
+    color: black;
+    border: 1px solid #999;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.btn-submit:hover, .btn-back:hover {
+    background-color: #bbb;
+}
