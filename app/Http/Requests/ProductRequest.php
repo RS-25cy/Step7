@@ -36,4 +36,31 @@ class ProductRequest extends FormRequest
             'img_path' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ];
     }
+    // バリデーションエラーメッセージをカスタマイズ
+    public function messages(): array
+    {
+        return [
+            'product_name.required' => '商品名は必須です。',
+            'product_name.string'   => '商品名は文字列で入力してください。',
+            'product_name.max'      => '商品名は255文字以内で入力してください。',
+
+            'company_id.required'   => 'メーカーを選択してください。',
+            'company_id.exists'     => '選択されたメーカーが存在しません。',
+
+            'price.required'        => '価格は必須です。',
+            'price.numeric'         => '価格は数値で入力してください。',
+            'price.min'             => '価格は0円以上で入力してください。',
+
+            'stock.required'        => '在庫数は必須です。',
+            'stock.integer'         => '在庫数は整数で入力してください。',
+            'stock.min'             => '在庫数は0以上で入力してください。',
+
+            'comment.string'        => 'コメントは文字列で入力してください。',
+
+            'img_path.image'        => '画像ファイルを選択してください。',
+            'img_path.mimes'        => '画像はjpeg、png、jpg、gif形式のみ対応しています。',
+            'img_path.max'          => '画像サイズは2MB以内でアップロードしてください。',
+        ];
+    }
 }
+    

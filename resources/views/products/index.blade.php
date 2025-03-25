@@ -10,6 +10,16 @@
     <form method="GET" action="{{ route('products.index') }}">
         <input type="text" name="keyword" placeholder="キーワードを入力">
         
+    <!-- メーカー検索の追加 -->
+        <select name="company_id">
+            <option value="">全メーカー</option>
+            @foreach ($companies as $company)
+                <option value="{{ $company->id }}" {{ request('company_id') == $company->id ? 'selected' : '' }}>
+                    {{ $company->company_name }}
+                </option>
+            @endforeach
+        </select>
+
         <!-- ✅ 検索ボタンを詳細・削除ボタンと統一 -->
         <button type="submit" class="btn-detail">検索</button>
 
